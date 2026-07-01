@@ -1,0 +1,1 @@
+grep -v "^#" virgata_m3M3n3_R80_maf025_single.sumstats.tsv |awk -F "\t" '$20+0 <0.05 {print $1}' >HWE-blacklist.txt
